@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bgblack">
+        <h1 id="title" class="heading">Dom  <span id="h1" style="display: none;">learning</span> on chai aur code</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h2>hi</h2>
+        <h2>hi2</h2>
+        <h2>h3</h2>
+        <h2>hi5</h2>
+
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+
+    <script>
+       let title = document.getElementById('title')
+      let c = title.textContent
+      let d = title.innerHTML
+      let e = title.innerText
+      console.log(c)
+      console.log(d)
+      console.log(e)
+       title.style.color = 'red'
+       title.style.backgroundColor = 'pink'
+       title.style.padding = "16px"
+       console.log(title.id)
+       console.log(title.className)
+
+
+       let span = document.getElementById('h1')
+       span.style.color="yellow"
+       console.log(span)
+
+
+
+ let ul = document.querySelector('ul')       
+ console.log(ul)
+ let b  = document.querySelector('ul')
+ console.log(b)
+ let u = document.querySelector('li') 
+ console.log(u)
+ let h = u.textContent
+ console.log(h)
+ u.style.backgroundColor="red"
+ u.style.color="yellow"
+ u.textContent = "ajayk"
+ console.log(u)
+
+
+
+ let p = document.querySelectorAll('h2')
+ console.log(p)
+ p[2].style.color="red"
+
+ p.forEach(function(l){
+   l.style.color="pink"
+   l.textContent = "ak"
+ })
+ let y = p.textContent
+ console.log(y)
+ y.style.color="red"
+ console.log(y)
+
+  let h6 = i.textContent = "ajay kumar"
+ console.log(h6)
+ console.log(i)
+
+    </script>
+</body>
+</html>
