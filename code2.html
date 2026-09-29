@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="t1" class="n1">This is html page</h1>
+    <p  id="t2" class="n2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, facilis!</p>
+    <span  id="t3" class="n2">Hi Ajay Kumar Sah This is your content</span>
+    <h2  id="t4" class="n2">hello wow good idea</h2>
+    <h1  id="t5" class="n2">Now written this page hera</h1>
+    <h1  id="t6" class="n2">Hellow placse sit here now</h1>
+    <p  id="t7" class="n2">This is a paragrahp</p>
+    <div id="box">
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Fore</li>
+        </ul>
+    </div>
+
+    <script>
+     let t1 = document.getElementById('t1')
+     console.log(t1)
+     console.log(t1.id)
+     console.log(t1.className)
+     t1.style.color="red"
+    let s1 = t1.innerText = "hellow ji"
+    console.log(s1)
+    t1.style.fontSize="50px"
+    t1.style.backgroundColor="yellow"
+
+
+
+    let n2 = document.getElementsByClassName('n2')
+  let s4 = n2[0].innerText = 'aj'
+    console.log(s4)
+
+    n2[1].style.color="red"
+    n2[0].style.backgroundColor="blue"
+    console.log(n2)
+    
+    
+    // let span = document.getElementsByClassName('n2')
+    let span = document.getElementsByTagName('span')
+    for(let i=0; i<span.length; i++){
+        span[i].style.color="green"
+    }
+    let ar1 = span[0].innerText
+    // span[0].style.color="green"
+    console.log(ar1)
+    console.log(span)
+
+
+
+    let t7 = document.querySelector('#t7')
+    console.log(t7)
+    t7.style.color="red"
+    let g3 = t7.innerText = "I Love You"
+    console.log(g3)
+
+
+
+     let y1 = document.querySelectorAll('.n2')
+    y1[3].style.color="green"
+
+    // for(let i=0; i<y1.length; i++){
+    //     y1[i].style.color="red"
+    // }
+
+    y1.forEach(function(u){
+        u.style.color="green"
+    })
+    
+    
+    
+    
+    // n2.forEach(function(i){
+    //     i.style.color="pink"
+    // })
+    </script>
+</body>
+</html>
