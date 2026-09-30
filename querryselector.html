@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="h1">Ajay kumar</h1>
+    <h1  class="h1">Hi, Ajay kumar sag</h1>
+    <h1  class="h1">Lorem ipsum dolor sit amet.</h1>
+    <p>This is my paged</p>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Service</li>
+    </ul>
+  <input type="password" placeholder="Enter your name">
+    <script>
+
+
+let h1 = document.getElementsByClassName('h1')
+console.log(h1)
+
+ let arrw = Array.from(h1)
+console.log(arrw)
+arrw.forEach(function(i){
+    i.style.color="red"
+})
+
+
+
+      let password =  document.querySelector('input[type="password"]')
+      console.log(password)
+
+    //   let li = document.querySelector('li:first-child')
+    //   let li = document.querySelector('li:last-child')
+      let li = document.querySelector('li:nth-child(2)')
+      li.style.color="red"
+      console.log(li)
+
+
+      let c = document.querySelectorAll('li')
+      console.log(c)
+    </script>
+</body>
+</html>
